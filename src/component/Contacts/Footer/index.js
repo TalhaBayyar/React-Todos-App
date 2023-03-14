@@ -1,5 +1,5 @@
 function Footer({contacts,setContacts, situation, setSituation}) {
-	
+
 const itemLeft = contacts.filter((todo) => !todo.isChecked).length;
 const activeButton = () => {
   const array = contacts.filter(item => item.isChecked)
@@ -8,9 +8,10 @@ const activeButton = () => {
 const onClickAvailable = (e) => {
   setSituation(e.target.name)
 }
+  
   return (
     <div>
-      <footer className="footer">
+      <footer  className={contacts.length < 1 ? "hidden" : "footer"}>
 		<span className="todo-count">
 		  <strong>{itemLeft} </strong>
 			items left

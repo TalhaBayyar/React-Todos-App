@@ -14,9 +14,9 @@ function Contacts() {
     }
   })
   
-  useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(contacts));
-  }, [contacts]);
+  // useEffect(() => {
+  //   localStorage.setItem("todos", JSON.stringify(contacts));
+  // }, [contacts]);
 
   return (
     <div>
