@@ -33,8 +33,8 @@ const handleSaveEdit = () => {
     <div className='main'>
 	  <ul className="todo-list">
         {
-          contacts.forEach((item,index) => {
-			if(situation === "All"){git 
+          contacts.map((item,index) => {
+			if(situation === "All"){
 			  return(
 				<li className={!item.isChecked ? "" : "completed"} key={index}>
 			      <div className="view">
